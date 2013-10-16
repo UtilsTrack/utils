@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
 public class CloneUtils {
 
 	/**
-	 * 
+	 * Shallow clone any object
 	 * @param Object
 	 * @return new Object
 	 * @throws InstantiationException
