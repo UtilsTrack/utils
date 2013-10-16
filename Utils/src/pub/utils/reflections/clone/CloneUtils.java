@@ -2,8 +2,23 @@ package pub.utils.reflections.clone;
 
 import java.lang.reflect.Field;
 
+/**
+ * Class to clone any object
+ * @author Eduardo
+ *
+ */
 public class CloneUtils {
 
+	/**
+	 * 
+	 * @param Object
+	 * @return new Object
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 * @throws SecurityException
+	 * @throws NoSuchFieldException
+	 */
+	
 	public synchronized static Object clone(Object obj) throws InstantiationException, IllegalAccessException, SecurityException, NoSuchFieldException  {
 		
 		Object newObj = obj.getClass().newInstance();
